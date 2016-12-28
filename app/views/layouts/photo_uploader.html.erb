@@ -4,11 +4,15 @@
     <title>PhotoUploader</title>
     <%= csrf_meta_tags %>
 
+    <%= render "partials/menu-public" %>
+
     <%= stylesheet_link_tag    'photo_uploader', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
